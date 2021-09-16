@@ -28,8 +28,10 @@ namespace study_dotnet5
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services)
     {
+      var connection = Configuration["ConnectionStrings:FilmeConnection"];
+      var serverVersion = ServerVersion.AutoDetect(connection);
 
-      services.AddDbContext<FilmeContext>(opts => opts.UseMySQL(Configuration.GetConnectionString("FilmeConnection")));
+      services.AddDbContext<FilmeContext>(opts => opts.UseMySql(connection, serverVersion));
       services.AddControllers();
       services.AddSwaggerGen(c =>
       {

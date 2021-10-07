@@ -36,3 +36,7 @@ C:\Projects\study-dotnet5\FilmesAPI\bin\Debug\net5.0\Microsoft.Extensions.Depend
 C:\Projects\study-dotnet5\FilmesAPI\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
 C:\Projects\study-dotnet5\FilmesAPI\bin\Debug\net5.0\MySqlConnector.dll
 C:\Projects\study-dotnet5\FilmesAPI\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Projects\study-dotnet5\FilmesAPI\bin\Debug\net5.0\AutoMapper.dll
+C:\Projects\study-dotnet5\FilmesAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Projects\study-dotnet5\FilmesAPI\bin\Debug\net5.0\Castle.Core.dll
+C:\Projects\study-dotnet5\FilmesAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Proxies.dll

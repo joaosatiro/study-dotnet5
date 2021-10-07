@@ -31,7 +31,7 @@ namespace study_dotnet5
       var connection = Configuration["ConnectionStrings:FilmeConnection"];
       var serverVersion = ServerVersion.AutoDetect(connection);
 
-      services.AddDbContext<FilmeContext>(opts => opts.UseMySql(connection, serverVersion));
+      services.AddDbContext<FilmeContext>(opts => opts.UseLazyLoadingProxies().UseMySql(connection, serverVersion));
       services.AddControllers();
       services.AddSwaggerGen(c =>
       {

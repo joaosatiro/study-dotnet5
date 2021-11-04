@@ -1,6 +1,7 @@
 ﻿using FilmesAPI.Models;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace study_dotnet5.Models
 {
@@ -10,6 +11,7 @@ namespace study_dotnet5.Models
         [Required]
         public int Id { get; set; }
         public string Nome { get; set; }
+        [JsonIgnore]
         public virtual List<Cinema> Cinemas { get; set; }
     }
 }
